@@ -1,42 +1,5 @@
-@import "./sass/base";
-@import "./sass/layouts/header";
-@import "./sass/layouts/city";
-@import "./sass/layouts/explorer";
-
-
-.explorer{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    background-color: #f6f6f6;
-    & h2{
-        margin-top: 2rem;
-    }
-    & p{
-        font-size: 1rem;
-        color: #525252;
-    }
-    & button{
-        color:white;
-        font-weight: 300;
-        font: size 1.5rem;
-        padding:1rem 2rem;
-        border:none;
-        border-radius: 2rem;
-        box-shadow: 0px 0px 0px -3px #000000;
-        background-image: linear-gradient(to top, rgba(147,86,220,0.9),rgba(255,121,218,0.9));
-        transition: transform 200ms;
-        margin-top: 1rem;
-    
-    }
-    & button:hover{
-        transform:scale(1.02);
-        opacity: 0.9;
-    }
-}
-
-
-
-
-
+@use "./sass/base";
+@use "./sass/layouts/header";
+@use "./sass/layouts/city";
+@use "./sass/layouts/explorer";
+@use "./sass/layouts/tuto";
