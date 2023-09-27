@@ -1,6 +1,10 @@
 @use "../utils/base-shadow";
 @use "../utils/zoom.scss";
+@use "../utils/variables";
+@use "../utils/colors";
+
 .tuto{
+    counter-reset: steps;
     & ol{
         display: flex;
         flex-wrap: wrap;
@@ -10,8 +14,24 @@
         }
     }
     & li{
+        position: relative;
+        &::before{
+            content: "" counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: colors.$purple;
+            width: 2*variables.$tuto-bullet-height;
+            height: 2*variables.$tuto-bullet-height;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 1*variables.$tuto-bullet-height;
+            left: -1*variables.$tuto-bullet-height;
+        }
+        list-style-type: none;
         background-color: #f6f6f6;
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         flex-grow: 1;
         border-radius: 1rem;
         @include base-shadow.base-shadow;
@@ -19,6 +39,11 @@
             @include zoom.zoom;
         }
       
+    }
+    & i.fas{
+        margin-right: 1rem;
+        color: colors.$light-grey;
+        font-size: 1.5rem;
     }
 
 }
