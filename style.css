@@ -133,11 +133,49 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.menus .card .card_image {
-  background-image: url("assets/image1.jpg");
+.menus .new {
+  position: relative;
+}
+.menus .new::before {
+  content: "NEW";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  color: #1b6150;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+}
+.menus .card-image {
   background-size: cover;
   border-radius: 1rem;
   height: 15rem;
+}
+.menus .card__image-1 {
+  background-image: url("assets/image1.jpg");
+}
+.menus .card__image-2 {
+  background-image: url("assets/image2.jpg");
+}
+.menus .card__image-3 {
+  background-image: url("assets/image3.jpg");
+}
+.menus .card__image-4 {
+  background-image: url("assets/image4.jpg");
+}
+.menus .card__image1 {
+  background-image: url("assets/image1.jpg");
+}
+.menus .card__image2 {
+  background-image: url("assets/image2.jpg");
+}
+.menus .card__image3 {
+  background-image: url("assets/image3.jpg");
+}
+.menus .card__image4 {
+  background-image: url("assets/image4.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
