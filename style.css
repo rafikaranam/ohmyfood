@@ -134,7 +134,7 @@ header {
   }
 }
 .menus .card .card_image {
-  background-image: url("../../assets/image1.jpg");
+  background-image: url("assets/image1.jpg");
   background-size: cover;
   border-radius: 1rem;
   height: 15rem;
