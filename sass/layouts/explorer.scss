@@ -1,4 +1,4 @@
-@use "../utils/base-shadow";
+@use "../utils/mixins";
 
 .explorer{
     display: flex;
@@ -23,10 +23,11 @@
         border:none;
         border-radius: 2rem;
         // box-shadow: 0px 0px 0px -3px #000000;
-        background-image: linear-gradient(to top, rgba(147,86,220,0.9),rgba(255,121,218,0.9));
+        //background-image: linear-gradient(to top, rgba(147,86,220,0.9),rgba(255,121,218,0.9));
         transition: transform 200ms;
         margin-top: 1rem;
-        @include base-shadow.base-shadow;
+        @include mixins.base-shadow;
+        @include mixins.gradient;
     
     }
     & button:hover{
