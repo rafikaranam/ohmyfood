@@ -26,7 +26,7 @@
         //background-image: linear-gradient(to top, rgba(147,86,220,0.9),rgba(255,121,218,0.9));
         transition: transform 200ms;
         margin-top: 1rem;
-        @include mixins.base-shadow;
+        @include mixins.box-shadow;
         @include mixins.gradient;
     
     }

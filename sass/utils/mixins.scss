@@ -8,7 +8,7 @@
     transform: scale(1.02);
 }
 
-@mixin base-shadow{
+@mixin box-shadow{
     box-shadow: 2px 1px 8px -3px #000000;
 }
 
@@ -34,4 +34,22 @@
     transition: all 200ms ease-in-out;
     
 
+}
+
+@mixin heart-animated{
+    position: relative;
+            background-color: white;
+            border-radius: 0 0 1rem 1rem;
+            &::before{
+                @include heart;
+
+            }
+            &::after{
+                @include heart($opacity:0,$font-weight:900,$color:transparent);
+                @include gradient(1);
+            }
+            &:hover::after{
+                opacity: 1;
+                transform: translateY(-50%) scale(1.1);
+            }
 }
