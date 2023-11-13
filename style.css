@@ -212,16 +212,16 @@ header {
   background-position: center;
 }
 #homepage .menus .card__image-1 {
-  background-image: url("../assets/image1.jpg");
+  background-image: url("./assets/image1.jpg");
 }
 #homepage .menus .card__image-2 {
-  background-image: url("../assets/image2.jpg");
+  background-image: url("./assets/image2.jpg");
 }
 #homepage .menus .card__image-3 {
-  background-image: url("../assets/image3.jpg");
+  background-image: url("./assets/image3.jpg");
 }
 #homepage .menus .card__image-4 {
-  background-image: url("../assets/image4.jpg");
+  background-image: url("./assets/image4.jpg");
 }
 #homepage .menus .card__description {
   position: relative;
